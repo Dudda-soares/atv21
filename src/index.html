@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>olá</h1>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__text">Voce esta convidado para o meu aniversario !
+            <img class="hero__img" src="./image/surpresa.png" alt=""></h1>
+        </div>
+    </header>
+    <section class="relogio">
+        <div class="container">
+            <div class="relogio__contagem" id="contador">
+                <h1 class="relogio__title">Save The Date</h1>
+                <span id="dia"></span> <span id="hora"></span> <span id="minutos"></span> <span id="seg"></span>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>
