@@ -1,0 +1,50 @@
+.infor{
+    padding: 16px 24px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid yellow;
+
+    &__list{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            font-size: 14px;
+
+            b{
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+    &__button{
+        padding: 12px;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        white-space: nowrap;
+        background-color: rgba(255, 187, 0, 0.938);
+        color: white;
+    }
+
+    @media (max-width:640px){
+        display: block;
+
+        &__list{
+            display: block;
+
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        &__list{
+            gap: 24px;
+        }
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +13,56 @@
 <body>
     <header class="hero">
         <div class="container">
-            <h1 class="hero__text">Voce esta convidado para o meu aniversario !
+            <h1 class="hero__text">Venha comemorar meu aniversário ! <br/>
+                Sua presença vai deixar meu dia ainda mais especial!
             <img class="hero__img" src="./image/surpresa.png" alt=""></h1>
+            <div class="infor">
+                <ul class="infor__list">
+                    <li class="infor__list__item">
+                        <b>Localização</b>
+                        Guarulhos - SP
+                    </li>
+                    <li class="infor__list__item">
+                        <b>Quando</b>
+                        25/02/2026 ás 20hrs
+                    </li>
+                </ul>
+                <a href="#" class="infor__button">
+                    Confirme sua presença
+                </a>
+            </div>
         </div>
     </header>
     <section class="relogio">
-        <div class="container">
-            <div class="relogio__contagem" id="contador">
-                <h1 class="relogio__title">Save The Date</h1>
-                <span id="dia"></span> <span id="hora"></span> <span id="minutos"></span> <span id="seg"></span>
+        <div class="container" data-aos="zoom-in-up">
+            <h1 class="relogio__title">Save The Date</h1>
+            <div class="relogio__contagem"   id="contador">
+                <span  id="dia"></span> <span  id="hora"></span> <span  id="minutos"></span> <span  id="seg"></span>
             </div>
         </div>
-        
     </section>
-
+    <section class="evento evento--music">
+        <div class="container" data-aos="fade-right">
+            <div class="evento__descricao">
+                <h1 class="evento__descricao__title">Pra já entrar no clima, a playlist da festa já tá disponível!</h1>
+                <p class="evento__descricao__txt">A trilha sonora já está pronta para te colocar no clima da festa! Selecionamos músicas que representam alegria, diversão e boas vibrações para esse dia tão esperado. Aperte o play e venha curtir com a gente!
+                </p>
+            </div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7MEUBQAqsL5Vs8x7ucidan?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section class="evento evento--maps evento--img-left">
+        <div class="container" data-aos="fade-left">
+            <div class="evento__descricao">
+                <h1 class="evento__descricao__title">Vem Curtir Comigo!</h1>
+                <p class="evento__descricao__txt">
+                    Preparamos tudo com carinho e estamos te esperando aqui.O lugar já está reservado e esperando por você! Confira abaixo a localização da festa e venha viver esse momento especial com a gente. Vai ser incrível te ter por perto para celebrar juntos!
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15553.332734912365!2d-38.386023927760974!3d-12.950519026445866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716177d81eb69a5%3A0x947b32bd221c2470!2sPraia%20de%20Itapu%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1749587823505!5m2!1spt-BR!2sbr" width="100%" height="352" style="border-radius:12px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 

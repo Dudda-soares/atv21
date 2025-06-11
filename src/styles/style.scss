@@ -1,14 +1,17 @@
 @use './variaveis';
 @use './hero';
 @use './relogio';
+@use './componentes/infor_bar';
+@use './evento';
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    list-style-type: none;
 }
-
 .container{
     max-width: 960px;
     width: 100%;
