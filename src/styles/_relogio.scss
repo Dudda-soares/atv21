@@ -1,14 +1,15 @@
+ @use './variaveis';
  
  .relogio{
     padding: 80px 0;
     background-image: 
-        url(../image/baleia.png),
-        linear-gradient(180deg, #35bed3b7, #1678fbb0);
+        url(../image/polvo.png),
+        linear-gradient(180deg, variaveis.$corBlueR1, variaveis.$corBlueR2);
 
 
         background-repeat: no-repeat;
-        background-size: contain,cover ;
-        background-position: 7% , center;
+        background-size: auto,cover ;
+        background-position: 4% 25px , center;
 
 
     &__contagem{
@@ -26,39 +27,38 @@
         background-position: center;
         font-weight: 800;
         color: white;
-        text-shadow: 2px 2px 14px #1446e7;
+        text-shadow: 2px 2px 14px variaveis.$corBlueHero;
 
         }
     }
     &__title{
-            font-size: 27px;
+            font-size: 39px;
             color: white;
-            text-shadow: 2px 2px 14px #1446e7;
+            text-shadow: 2px 2px 14px variaveis.$corBlueHero;
             text-align: center;
             margin-bottom: 5vw;
-    }
+            font-family: "DynaPuff", system-ui;
+        }
 
 
     @media (max-width: 640px){
+        background-image:  linear-gradient(180deg, variaveis.$corBlueR1, variaveis.$corBlueR2);
+        background-position: center;
 
-        background-image: linear-gradient(180deg, #35bed3b7, #1678fbb0);
-        
         &__contagem{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            flex-wrap:wrap ;
             row-gap: 24px;
         }
         span{
             padding: 15.9vw;
-            
             font-size: 19px;
-            background-size: 140px 140px;
+            background-size: contain;
         }
     }
 
     @media (max-width:1024px){
-        
-        background-image: linear-gradient(180deg, #35bed3b7, #1678fbb0);
+        background-image:  linear-gradient(180deg, variaveis.$corBlueR1, variaveis.$corBlueR2);
+        background-position: center;
 
         &__contagem{
             display: flex;
@@ -69,9 +69,21 @@
         }
 
         span{
-            padding: 5.9vw;
-            background-size: 140px 140px;
+           
+            background-size: contain;
         }
+    }
+    @media (max-width:1441px){
+        
+        
+        &__contagem{
+            justify-content: center;
+        }
+        span{
+            background-size: contain;
+        }
+
+
     }
     
  }
